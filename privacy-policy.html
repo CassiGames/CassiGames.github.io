@@ -77,7 +77,7 @@
 <div class="container">
 
 <h1>Privacy Policy</h1>
-<p class="subtitle">BubbleSort — by CassiGames · Last updated: April 15, 2026</p>
+<p class="subtitle">BubbleSort — by CassiGames · Last updated: May 8, 2026</p>
 
 <h2>Introduction</h2>
 <p>BubbleSort is a casual puzzle game developed by CassiGames. We respect your privacy and keep things simple: we collect as little as possible, we don't sell your data, and everything that leaves your device is listed below.</p>
@@ -116,6 +116,21 @@
 </ul>
 <p>Crash reports do not include any personal information, game content, or account data. Crashlytics is disabled entirely in debug/development builds.</p>
 
+<h2>Analytics (Firebase Analytics)</h2>
+<p>From version 1.1.0 onwards, BubbleSort uses Firebase Analytics to understand how the game is played and to improve it. Analytics collects:</p>
+<ul>
+  <li>App launch events and session length</li>
+  <li>Screens viewed within the app</li>
+  <li>Aggregate retention metrics (e.g. how often you return)</li>
+  <li>An anonymous app instance ID and your country (inferred from IP)</li>
+  <li>Your device model, OS version, and app version</li>
+</ul>
+<p>Analytics data does not include your real name, email, or any account identifier. It is processed by Google under their own privacy policy. Analytics is disabled in debug/development builds.</p>
+<p>If you have opted out of personalized ads via the consent form, advertising-identifier-based events in Analytics are also affected accordingly.</p>
+
+<h2>Live Events (Firebase Remote Config)</h2>
+<p>BubbleSort uses Firebase Remote Config to deliver in-game events such as launch celebrations, seasonal gifts, and announcements without requiring an app update. Remote Config sends Google your app version, locale, and an anonymous app instance ID to determine which event applies to your device. No personal data is involved.</p>
+
 <h2>In-App Purchases</h2>
 <p>BubbleSort offers optional in-app purchases (currently only: "Remove Ads") processed entirely through Google Play. Google handles payment and receives your payment details — CassiGames never sees or stores any card or billing information. We only receive a purchase token from Google confirming the purchase was completed.</p>
 
@@ -124,12 +139,20 @@
 <p>We do not receive your email address, real name, or any other profile information from your Google account. You can disconnect your account at any time through your device's Google Play Games settings.</p>
 <p>If you don't sign in, all game progress is stored locally on your device only.</p>
 
+<h2>App Updates and Review Prompts</h2>
+<p>BubbleSort uses Google's in-app update and in-app review services (part of Google Play Services) to:</p>
+<ul>
+  <li>Notify you when a new version of the game is available, and offer a one-tap update without leaving the app</li>
+  <li>Optionally prompt you for a Play Store review after you've played for a while</li>
+</ul>
+<p>These services are provided by Google Play and do not send any new personal data to us — they're handled entirely by the Google Play app on your device.</p>
+
 <h2>Children's Privacy (COPPA)</h2>
 <p>BubbleSort is suitable for all ages. We do not knowingly collect personal information from children under 13, in line with the Children's Online Privacy Protection Act (COPPA). Google Sign-In is optional and not required to play. Advertisements are filtered to Teen rating or lower — no mature themes, graphic violence, or inappropriate content will be shown.</p>
 <p>If you believe a child under 13 has provided us with personal information, please contact us and we will promptly delete it.</p>
 
 <h2>Data Sharing</h2>
-<p>We do not sell, trade, or share any data with third parties. The only third-party services integrated in the app are the Google services described above (AdMob, Firebase Crashlytics, Google Play Billing, Google Play Games Services), each operating under Google's own privacy policy.</p>
+<p>We do not sell, trade, or share any data with third parties. The only third-party services integrated in the app are the Google services described above (AdMob, Firebase Crashlytics, Firebase Analytics, Firebase Remote Config, Google Play Billing, Google Play Games Services), each operating under Google's own privacy policy.</p>
 
 <h2>Data Storage</h2>
 <p>Game data (level progress, power-up inventory, settings) is stored locally on your device. If you sign in with Google Play Games, that progress is additionally synced to Google's cloud. Uninstalling the app removes all local data; cloud-saved progress can be restored by signing in again on any device.</p>

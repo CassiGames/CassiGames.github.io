@@ -77,7 +77,7 @@
 <div class="container">
 
 <h1>Privacy Policy</h1>
-<p class="subtitle">BubbleSort — by CassiGames · Last updated: May 8, 2026</p>
+<p class="subtitle">BubbleSort — by CassiGames · Last updated: August 8, 2026</p>
 
 <h2>Introduction</h2>
 <p>BubbleSort is a casual puzzle game developed by CassiGames. We respect your privacy and keep things simple: we collect as little as possible, we don't sell your data, and everything that leaves your device is listed below.</p>
@@ -86,25 +86,35 @@
 <p>We want to be clear up front. BubbleSort does <strong>not</strong> collect:</p>
 <ul>
   <li>Your name or email address</li>
-  <li>Your location (beyond the country-level region AdMob may infer from your IP)</li>
+  <li>Your precise location (only country-level region inferred from your IP)</li>
   <li>Your contacts, photos, files, microphone, or camera</li>
   <li>Any data linked to your real-world identity</li>
 </ul>
 <p>BubbleSort requests no sensitive permissions from your device.</p>
 
-<h2>Advertising (Google AdMob)</h2>
-<p>BubbleSort shows ads through Google AdMob. To serve ads, AdMob may collect your device's advertising identifier, general region (country/city level inferred from IP), and interaction data with the ads themselves. This data is processed by Google under their own privacy policy.</p>
+<h2>Advertising (Google AdMob + Mediation Partners)</h2>
+<p>BubbleSort shows advertisements through Google AdMob. Since version 1.1.03 (August 2026), AdMob operates in "mediation" mode — when AdMob doesn't have an ad to show, partner ad networks are given the chance to serve one instead. This increases fill rates and results in more relevant advertisements.</p>
+<p>The following mediation partners are currently integrated:</p>
+<ul>
+  <li><strong>Google AdMob</strong> — primary ad network</li>
+  <li><strong>Unity Ads</strong> — added August 2026</li>
+</ul>
+<p>Additional mediation partners may be added in future updates. The complete, up-to-date list of authorized advertising partners is publicly available in our <a href="https://cassigames.github.io/app-ads.txt">app-ads.txt</a> file, following the IAB Tech Lab specification.</p>
+<p>To serve ads, these networks may collect your device's advertising identifier (Advertising ID), general region (country/city level inferred from IP), and interaction data with the ads themselves. Each network processes this data under its own privacy policy:</p>
+<ul>
+  <li>Google AdMob — <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a></li>
+  <li>Unity Ads — <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">unity.com/legal/game-player-and-app-user-privacy-policy</a></li>
+</ul>
 <p>All ads are filtered to the Teen (T) content rating or lower, so no mature themes, violence, or inappropriate content will be shown.</p>
-<p>You can read more at <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
-<p>BubbleSort offers a one-time "Remove Ads" purchase that disables interruptive ads. Rewarded ads (the ones you choose to watch for in-game rewards) remain available but are always optional.</p>
+<p>BubbleSort offers a one-time "Remove Ads" purchase that disables interruptive advertisements. Rewarded ads (the ones you choose to watch for in-game rewards) remain available but are always optional.</p>
 
 <h2>Consent for Personalized Ads (UMP / GDPR)</h2>
 <p>In the European Economic Area, the UK, and Switzerland, BubbleSort uses <strong>Google's User Messaging Platform (UMP)</strong> to ask for your consent before showing personalized ads. On first launch (or after your previous choice expires) you'll see Google's consent form explaining what data is used and giving you the choice between:</p>
 <ul>
-  <li><strong>Personalized ads</strong> — AdMob and its partners may use your device's advertising identifier and activity to serve ads tailored to your interests.</li>
+  <li><strong>Personalized ads</strong> — the ad networks may use your device's advertising identifier and activity to serve ads tailored to your interests.</li>
   <li><strong>Non-personalized ads</strong> — ads are still shown but are not personalized based on your past behaviour.</li>
 </ul>
-<p>Your choice is remembered by the UMP SDK on your device. You can change it at any time in <strong>Settings → Ad Preferences</strong> — this reopens the same Google consent form so you can grant or withdraw consent without reinstalling the app. This satisfies your right to withdraw consent at any time under the GDPR.</p>
+<p>Your choice is remembered by the UMP SDK on your device and passed through to all mediation partners. You can change it at any time in <strong>Settings → Ad Preferences</strong> — this reopens the same Google consent form so you can grant or withdraw consent without reinstalling the app. This satisfies your right to withdraw consent at any time under the GDPR.</p>
 <p>Outside the EEA/UK/Switzerland, no consent form is shown because one isn't required, and the "Ad Preferences" button is hidden.</p>
 
 <h2>Crash Reporting (Firebase Crashlytics)</h2>
@@ -117,10 +127,11 @@
 <p>Crash reports do not include any personal information, game content, or account data. Crashlytics is disabled entirely in debug/development builds.</p>
 
 <h2>Analytics (Firebase Analytics)</h2>
-<p>From version 1.1.0 onwards, BubbleSort uses Firebase Analytics to understand how the game is played and to improve it. Analytics collects:</p>
+<p>From version 1.1.0 (May 2026) onwards, BubbleSort uses Firebase Analytics to understand how the game is played and to improve it. Analytics collects:</p>
 <ul>
   <li>App launch events and session length</li>
   <li>Screens viewed within the app</li>
+  <li>In-game events (level starts, level completions, power-up usage, ad interactions)</li>
   <li>Aggregate retention metrics (e.g. how often you return)</li>
   <li>An anonymous app instance ID and your country (inferred from IP)</li>
   <li>Your device model, OS version, and app version</li>
@@ -128,11 +139,22 @@
 <p>Analytics data does not include your real name, email, or any account identifier. It is processed by Google under their own privacy policy. Analytics is disabled in debug/development builds.</p>
 <p>If you have opted out of personalized ads via the consent form, advertising-identifier-based events in Analytics are also affected accordingly.</p>
 
+<h2>Performance Monitoring (Firebase Performance)</h2>
+<p>From version 1.1.02 (June 2026) onwards, BubbleSort uses Firebase Performance Monitoring to help us identify slow operations on real-world devices — such as long app start times or slow cloud saves — so we can optimize the experience across a wide range of phones.</p>
+<p>Performance Monitoring collects:</p>
+<ul>
+  <li>App start durations</li>
+  <li>Timings of specific in-app operations (e.g. loading the level catalog, saving to cloud)</li>
+  <li>Network request durations and response codes (no request bodies or content)</li>
+  <li>Your device model, OS version, and app version</li>
+</ul>
+<p>No personal information is collected. Performance data is anonymous and aggregated across users. This feature is disabled in debug/development builds.</p>
+
 <h2>Live Events (Firebase Remote Config)</h2>
 <p>BubbleSort uses Firebase Remote Config to deliver in-game events such as launch celebrations, seasonal gifts, and announcements without requiring an app update. Remote Config sends Google your app version, locale, and an anonymous app instance ID to determine which event applies to your device. No personal data is involved.</p>
 
 <h2>In-App Purchases</h2>
-<p>BubbleSort offers optional in-app purchases (currently only: "Remove Ads") processed entirely through Google Play. Google handles payment and receives your payment details — CassiGames never sees or stores any card or billing information. We only receive a purchase token from Google confirming the purchase was completed.</p>
+<p>BubbleSort offers optional in-app purchases (currently only: "Remove Ads") processed entirely through Google Play Billing. Google handles payment and receives your payment details — CassiGames never sees or stores any card or billing information. We only receive a purchase token from Google confirming the purchase was completed.</p>
 
 <h2>Google Play Games Services (Cloud Save)</h2>
 <p>Signing in with Google Play Games is optional. If you sign in, we use your Google Play Games player ID to sync your game progress (level completion, star ratings, power-up inventory, streak data) to Google's cloud so you can restore it on another device or after reinstalling.</p>
@@ -152,7 +174,7 @@
 <p>If you believe a child under 13 has provided us with personal information, please contact us and we will promptly delete it.</p>
 
 <h2>Data Sharing</h2>
-<p>We do not sell, trade, or share any data with third parties. The only third-party services integrated in the app are the Google services described above (AdMob, Firebase Crashlytics, Firebase Analytics, Firebase Remote Config, Google Play Billing, Google Play Games Services), each operating under Google's own privacy policy.</p>
+<p>CassiGames does not sell, trade, or share your personal data with third parties for their own marketing purposes. The third-party services integrated in the app (listed above and in our <a href="https://cassigames.github.io/app-ads.txt">app-ads.txt</a> file) each receive only the data necessary for their function — ad serving, crash reporting, analytics, cloud save, or performance monitoring — and process that data under their respective privacy policies.</p>
 
 <h2>Data Storage</h2>
 <p>Game data (level progress, power-up inventory, settings) is stored locally on your device. If you sign in with Google Play Games, that progress is additionally synced to Google's cloud. Uninstalling the app removes all local data; cloud-saved progress can be restored by signing in again on any device.</p>
